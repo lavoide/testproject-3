@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Webnote</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,11 +12,11 @@
 			<div class="logo"><h1>Webnote</h1></div>
 			<nav id ="topnav" class="topnav">
 				<ul>
-					<li><a href="#">Заказать</a></li>
-					<li><a href="#">Контакты</a></li>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Описание</a></li>
+					<li><a href="#form">Заказать</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+					<li><a href="#about">О нас</a></li>
+					<li><a href="#responses">Отзывы</a></li>
+					<li><a href="#descr">Описание</a></li>
 				</ul>
 			</nav>
 			<a id="menu" href="#" class="icon">&#9776</a>
@@ -30,13 +30,13 @@
 		</div>
 	</section>
 
-	<h2>Описание</h2>
-		<section class="block2">
+	<h2 id="descr" class="block2h2">Описание</h2>
+		<section class="block2" >
 				<div class="noteimg">
 					<div class="bookholder">
 						<div class="book1"><img src="images/book1.png" alt=""></div>
-						<div class="book2"><img src="images/book2.png" alt=""></div>
-						<div class="book3"><img src="images/book3.png" alt=""></div>
+						<div class="book2 none"><img src="images/book2.png" alt=""></div>
+						<div class="book3 none"><img src="images/book3.png" alt=""></div>
 					</div>
 					<div class="circlelist">
 						<div id="circle1" class="circle active"></div>
@@ -68,12 +68,12 @@
 					</div>
 				</div>
 		</section>
-		<section class="block3"><div class="wrap">
+		<section class="block3" id="responses"><div class="wrap">
 			<img src="images/selectedpic.png" alt="">
 
 			</div>
 		</section>
-		<h2 class="h2block4">О нас</h2>
+		<h2 class="block4h2" id="about">О нас</h2>
 		<section class="block4">
 			<div class="we_desc">
 				<p>Создатели WEBNOTE команда дизайнеров,
@@ -85,25 +85,25 @@
 				<a href="#">Подробнее о нас</a>
 			</div>
 				<div class="we_img">
-					<!--<img src="images/we_desc.png" alt="we">-->
+					<img src="images/we_desc.png" alt="we">
 				</div>
 		</section>
-		<section class="block5">
+		<section class="block5" id="form">
 			<div class="wrap">
 				<form action="#" id="submit" class = "order">
 					<h3>Заказать</h3>
-					<p>Ваше имя*</p>
-					<input type="text" name="firstname" placeholder="Петро">
-					<p>Ваш телефон*</p>
-					<input type="number" name="number" placeholder="+38099999999">
-					<p>Ваш e-mail</p>
-					<input type="email" name="mail" placeholder="name@example.com">
+					<label for="firstname"><p>Ваше имя<span>*</span></p></label>
+					<input type="text" name="firstname" id="firstname" placeholder="Петро">
+					<label for="number"><p>Ваш телефон<span>*</span></p></label>
+					<input type="number" name="number" id="number" placeholder="+38099999999">
+					<label for="mail"><p>Ваш e-mail</p></label>
+					<input type="email" name="mail" id="mail" placeholder="name@example.com">
 					<p class="note">Оплата при получении. Доставка 2-7 дней.</p>
 				</form>
-				<button form = "submit" type="submit" value="send">Отправить</button>
+				<button form="submit" type="submit" value="send">Отправить</button>
 			</div>
 		</section>
-	<footer>
+	<footer id="contacts">
 			<h2>Наши контакты</h2>
 			<div class="flexwrap">
 				<div class="foot1">
