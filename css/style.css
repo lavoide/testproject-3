@@ -242,7 +242,6 @@ nav a{
 	margin: 3%;
 	margin-top: 0;
 	padding: 3%;
-	background-color: yellow;
 }
 .notelem{
 	display: block;
@@ -259,13 +258,28 @@ nav a{
 	display: block;
 	text-align: center;
 }
-.block2 h3, .block2 p{
+.block2 h3 {
+	font-family: "OpenSansBold";
+	font-size: 15px;
+	color:#7dc39f;
+	padding-left: 40px;
+}
+.block2 p{
+	font-size: 15px;
+	display: block;
+	padding-left:40px;
 
 }
-.notelem img{
+.notelem .img1{
 	display: block;
-	width: 15%;
 	float:left;
+	width:7%;
+}
+.notelem .img2{
+	display: block;
+	float:left;
+	width:6%;
+
 }
 .block3{
 	background-color: #323232;
@@ -327,6 +341,7 @@ h2 {
     background-repeat: no-repeat;
 	height: 100%;
 	padding-top: 5%;
+	position:relative;
  }
 .block5 form{
 	 background-color: #f7f7f7;
