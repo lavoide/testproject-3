@@ -160,7 +160,7 @@ header{
 .headtext{
 	display: block;
 	position:absolute;
-	top: 15%;
+	top: 15vmax;
 }
 .headtext h2{
 	font-family: "OpenSansExtraBold";
@@ -472,12 +472,13 @@ h2 {
 	height: auto;
 }
 .we_desc{
-	margin-left: 25px;
-	margin-right: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
 	max-width: 400px;
 	order: 2;
 }
 .we_desc p{
+	padding: 0;
 	text-align: justify;
 	font-size: 19px;
 	font-family: Tahoma;
@@ -625,17 +626,16 @@ h2 {
 		display: none;
 	}
 	.logo{
-		font-size: 16px;
+		font-size: 3vmax;
 		margin: 1% 0 1% 1%;
 	}
 	.icon{
 		display: block;
 		color: #f6f6f6;
-		font-size: 22px;
+		font-size: 30px;
 		margin: 0 0 0 90%;
         padding-top: 2%;
 		text-decoration: none;
-		line-height: inherit;
 	 }
 	.responsive ul{
 		width: 100%;
@@ -654,12 +654,16 @@ h2 {
 	.responsive li a{
 		font-size: 3.5vw;
 	}
+	.responsive li a:hover{
+		padding: 0;
+	}
 	.headtext{
 		width: 95%;
-		top: 15%;
+		top: 15vmax;
 		text-align:center;
 	}
 	.headtext h2{
+		font-size: 9vw;
 		margin: 0 auto;
 	}
 	.headtext p{
@@ -738,14 +742,14 @@ h2 {
 @media only screen and (max-width: 500px){
 	.headtext{
 		width: 95%;
-		top: 8%;
+		top: 15%;
 		text-align:center;
 	}
 	.headtext h2{
 		margin: 0 auto;
 	}
 	.headtext p{
-        font-size: 1.5vmax;
+        font-size: 2vmax;
 		margin: 0 auto;
 		margin-left: 10px;
 		margin-top: -3%;
@@ -785,6 +789,8 @@ footer h2{
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
+	margin-right:0;
+	margin-left: 0;
 }
 footer h4{
 	font-family: "OpenSansRegular";
